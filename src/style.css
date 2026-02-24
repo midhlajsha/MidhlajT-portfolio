@@ -288,6 +288,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 8px solid var(--white);
     box-shadow: var(--shadow-lg);
     animation: float 6s ease-in-out infinite;
+    transform-style: preserve-3d;
 }
 
 @keyframes float {
@@ -359,6 +360,11 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    transform-style: preserve-3d;
+}
+
+.skill-item > * {
+    transform: translateZ(30px);
 }
 
 .skill-item:hover {
@@ -392,6 +398,11 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     text-align: center;
     box-shadow: var(--shadow-lg);
+    transform-style: preserve-3d;
+}
+
+.stat-card > * {
+    transform: translateZ(40px);
 }
 
 .stat-number {
@@ -444,6 +455,11 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    transform-style: preserve-3d;
+}
+
+.service-card > * {
+    transform: translateZ(50px);
 }
 
 .service-card::before {
@@ -520,6 +536,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-md);
     transition: var(--transition);
     border-top: 4px solid var(--secondary-color);
+    transform-style: preserve-3d;
 }
 
 .project-card:hover {
@@ -529,6 +546,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-content {
     padding: 2rem;
+    transform: translateZ(40px);
 }
 
 .project-icon {
